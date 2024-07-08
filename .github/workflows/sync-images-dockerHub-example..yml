@@ -34,5 +34,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://bahadoreng/php7.2-fpm-alpine:latest \
+        skopeo copy docker://bahadoreng/php:7.2-fpm-alpine:latest \
             docker://registry.cn-hangzhou.aliyuncs.com/qilua_cloud/php7.2-fpm-alpine:7.2.33
