@@ -30,9 +30,11 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         logout: false
-        
+    
+    #skopeo copy docker://源docker镜像地址:版本号 \
+            #docker://registry.cn-hangzhou.aliyuncs.com/命名空间/镜像名称:版本号
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://bahadoreng/php:7.2-fpm-alpine:latest \
-            docker://registry.cn-hangzhou.aliyuncs.com/qilua_cloud/php7.2-fpm-alpine:7.2.33
+        skopeo copy docker://docker.io/mysql:9.0.0 \
+            docker://registry.cn-hangzhou.aliyuncs.com/qilua_cloud/mysql:9.0.0
