@@ -36,5 +36,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/rabbitmq:3.13.4 \
-            docker://registry.cn-hangzhou.aliyuncs.com/qilua_cloud/rabbitmq:3.13.4
+        skopeo copy docker://docker.io/php:7.4.33-fpm-alpine \
+            docker://registry.cn-hangzhou.aliyuncs.com/qilua_cloud/php:7.4.33-fpm-alpine
