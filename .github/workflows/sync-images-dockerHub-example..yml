@@ -36,5 +36,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/nginx:1.19.1-alpine \
-            docker://registry.cn-hangzhou.aliyuncs.com/qilua_cloud/nginx:1.19.1-alpine
+        skopeo copy docker://docker.io/php:8.3.0-fpm-alpine \
+            docker://registry.cn-hangzhou.aliyuncs.com/qilua_cloud/php:8.3.0-fpm-alpine
